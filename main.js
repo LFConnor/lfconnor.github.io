@@ -34,10 +34,11 @@ controls.enableDamping = true;
 // Load the OBJ file and apply orange material
 const objLoader = new OBJLoader();
 objLoader.load(
-  "public/objWholeThing.obj", // Adjust path if necessary
+  "objWholeThing.obj", // Adjust path if necessary
   function (object) {
     const orangeMaterial = new THREE.MeshStandardMaterial({
       color: 0xff6e40, // Orange color
+      //wireframe: true,
     });
 
     // Apply material to all meshes
